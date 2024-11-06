@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tet_5foperation_0',['tet_operation',['../classtet__operation.html',1,'']]]
+  ['operations_3a_0',['Currently supported operations:',['../md_math_2readme.html#autotoc_md1',1,'']]]
 ];

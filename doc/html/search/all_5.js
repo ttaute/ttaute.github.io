@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pow_5foperation_0',['pow_operation',['../classpow__operation.html',1,'']]]
+  ['license_0',['License',['../md_math_2readme.html#autotoc_md7',1,'']]]
 ];

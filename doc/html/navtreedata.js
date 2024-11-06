@@ -25,24 +25,23 @@
 var NAVTREE =
 [
   [ "math", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+    [ "Math program", "md_math_2readme.html", [
+      [ "Currently supported operations:", "md_math_2readme.html#autotoc_md1", null ],
+      [ "Build process", "md_math_2readme.html#autotoc_md2", [
+        [ "Cloning the repository", "md_math_2readme.html#autotoc_md3", null ],
+        [ "Building the program", "md_math_2readme.html#autotoc_md4", null ],
+        [ "Building the code documentation", "md_math_2readme.html#autotoc_md5", null ]
+      ] ],
+      [ "Badges with barely any value for anything but development", "md_math_2readme.html#autotoc_md6", null ],
+      [ "License", "md_math_2readme.html#autotoc_md7", null ],
+      [ "Credits", "md_math_2readme.html#autotoc_md8", null ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"add__operation_8h_source.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

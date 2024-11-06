@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['operation_0',['operation',['../classoperation.html',1,'']]],
-  ['operator_5ffactory_1',['operator_factory',['../classoperator__factory.html',1,'']]]
+  ['for_20anything_20but_20development_0',['Badges with barely any value for anything but development',['../md_math_2readme.html#autotoc_md6',1,'']]]
 ];

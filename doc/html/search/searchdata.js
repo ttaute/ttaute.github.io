@@ -1,21 +1,18 @@
 var indexSectionsWithContent =
 {
-  0: "acgmopst",
-  1: "acmopst",
-  2: "cg"
+  0: "abcdflmoprstvw",
+  1: "mp"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "classes",
-  2: "functions"
+  1: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Classes",
-  2: "Functions"
+  1: "Pages"
 };
 
