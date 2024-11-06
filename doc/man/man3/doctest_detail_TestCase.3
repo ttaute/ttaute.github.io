@@ -1,0 +1,98 @@
+.TH "doctest::detail::TestCase" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::detail::TestCase
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdoctest::TestCaseData\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTestCase\fP (funcType test, const char *file, unsigned line, const \fBTestSuite\fP &test_suite, const \fBString\fP &type=\fBString\fP(), int template_id=\-1)"
+.br
+.ti -1c
+.RI "\fBTestCase\fP (const \fBTestCase\fP &other)"
+.br
+.ti -1c
+.RI "\fBTestCase\fP (\fBTestCase\fP &&)=delete"
+.br
+.ti -1c
+.RI "\fBTestCase\fP & \fBoperator=\fP (const \fBTestCase\fP &other)"
+.br
+.ti -1c
+.RI "DOCTEST_MSVC_SUPPRESS_WARNING_POP \fBTestCase\fP & \fBoperator=\fP (\fBTestCase\fP &&)=delete"
+.br
+.ti -1c
+.RI "\fBTestCase\fP & \fBoperator*\fP (const char *in)"
+.br
+.ti -1c
+.RI "template<typename T > \fBTestCase\fP & \fBoperator*\fP (const T &in)"
+.br
+.ti -1c
+.RI "bool \fBoperator<\fP (const \fBTestCase\fP &other) const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "funcType \fBm_test\fP"
+.br
+.ti -1c
+.RI "\fBString\fP \fBm_type\fP"
+.br
+.ti -1c
+.RI "int \fBm_template_id\fP"
+.br
+.ti -1c
+.RI "\fBString\fP \fBm_full_name\fP"
+.br
+.in -1c
+
+Public Attributes inherited from \fBdoctest::TestCaseData\fP
+.in +1c
+.ti -1c
+.RI "\fBString\fP \fBm_file\fP"
+.br
+.ti -1c
+.RI "unsigned \fBm_line\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_name\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_test_suite\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_description\fP"
+.br
+.ti -1c
+.RI "bool \fBm_skip\fP"
+.br
+.ti -1c
+.RI "bool \fBm_no_breaks\fP"
+.br
+.ti -1c
+.RI "bool \fBm_no_output\fP"
+.br
+.ti -1c
+.RI "bool \fBm_may_fail\fP"
+.br
+.ti -1c
+.RI "bool \fBm_should_fail\fP"
+.br
+.ti -1c
+.RI "int \fBm_expected_failures\fP"
+.br
+.ti -1c
+.RI "double \fBm_timeout\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

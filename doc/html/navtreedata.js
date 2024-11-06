@@ -35,13 +35,26 @@ var NAVTREE =
       [ "Badges with barely any value for anything but development", "md_math_2readme.html#autotoc_md6", null ],
       [ "License", "md_math_2readme.html#autotoc_md7", null ],
       [ "Credits", "md_math_2readme.html#autotoc_md8", null ]
+    ] ],
+    [ "README", "md_README.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"add__operation_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

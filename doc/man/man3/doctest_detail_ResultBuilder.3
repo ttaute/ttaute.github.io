@@ -1,0 +1,95 @@
+.TH "doctest::detail::ResultBuilder" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::detail::ResultBuilder
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdoctest::AssertData\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBResultBuilder\fP (assertType::Enum at, const char *file, int line, const char *expr, const char *exception_type='', const \fBString\fP &exception_string='')"
+.br
+.ti -1c
+.RI "\fBResultBuilder\fP (assertType::Enum at, const char *file, int line, const char *expr, const char *exception_type, const \fBContains\fP &exception_string)"
+.br
+.ti -1c
+.RI "void \fBsetResult\fP (const \fBResult\fP &res)"
+.br
+.ti -1c
+.RI "template<int comparison, typename L , typename R > DOCTEST_NOINLINE bool \fBbinary_assert\fP (const DOCTEST_REF_WRAP(L) lhs, const DOCTEST_REF_WRAP(R) rhs)"
+.br
+.ti -1c
+.RI "template<typename L > DOCTEST_NOINLINE bool \fBunary_assert\fP (const DOCTEST_REF_WRAP(L) val)"
+.br
+.ti -1c
+.RI "void \fBtranslateException\fP ()"
+.br
+.ti -1c
+.RI "bool \fBlog\fP ()"
+.br
+.ti -1c
+.RI "void \fBreact\fP () const"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBdoctest::AssertData\fP
+.in +1c
+.ti -1c
+.RI "\fBAssertData\fP (assertType::Enum at, const char *file, int line, const char *expr, const char *exception_type, const \fBStringContains\fP &exception_string)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Public Attributes inherited from \fBdoctest::AssertData\fP
+.in +1c
+.ti -1c
+.RI "const \fBTestCaseData\fP * \fBm_test_case\fP"
+.br
+.ti -1c
+.RI "assertType::Enum \fBm_at\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_file\fP"
+.br
+.ti -1c
+.RI "int \fBm_line\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_expr\fP"
+.br
+.ti -1c
+.RI "bool \fBm_failed\fP"
+.br
+.ti -1c
+.RI "bool \fBm_threw\fP"
+.br
+.ti -1c
+.RI "\fBString\fP \fBm_exception\fP"
+.br
+.ti -1c
+.RI "\fBString\fP \fBm_decomp\fP"
+.br
+.ti -1c
+.RI "bool \fBm_threw_as\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_exception_type\fP"
+.br
+.ti -1c
+.RI "class DOCTEST_INTERFACE \fBdoctest::AssertData::StringContains\fP \fBm_exception_string\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename L > DOCTEST_NOINLINE bool doctest::detail::ResultBuilder::unary_assert (const DOCTEST_REF_WRAP(L) val)\fC [inline]\fP"
+OCLINT bitwise operator in conditional
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

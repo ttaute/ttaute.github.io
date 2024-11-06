@@ -1,0 +1,44 @@
+.TH "div_operation" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+div_operation
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBoperation\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBcalculate\fP (int a, int b) const override"
+.br
+.RI "Takes two numbers and applies the operation\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "int div_operation::calculate (int a, int b) const\fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Takes two numbers and applies the operation\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIa\fP First number, 
+.br
+\fIb\fP Second number 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The division operation in div_operation\&.cpp 
+.RE
+.PP
+Currently, this is the only possible answer for negative numbers\&. This is not what for example -8/2 should output\&.
+.PP
+Implements \fBoperation\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

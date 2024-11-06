@@ -1,0 +1,64 @@
+.TH "doctest::Context" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::Context
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContext\fP (int argc=0, const char *const *argv=nullptr)"
+.br
+.ti -1c
+.RI "\fBContext\fP (const \fBContext\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContext\fP (\fBContext\fP &&)=delete"
+.br
+.ti -1c
+.RI "\fBContext\fP & \fBoperator=\fP (const \fBContext\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContext\fP & \fBoperator=\fP (\fBContext\fP &&)=delete"
+.br
+.ti -1c
+.RI "void \fBapplyCommandLine\fP (int argc, const char *const *argv)"
+.br
+.ti -1c
+.RI "void \fBaddFilter\fP (const char *filter, const char *value)"
+.br
+.ti -1c
+.RI "void \fBclearFilters\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetOption\fP (const char *option, bool value)"
+.br
+.ti -1c
+.RI "void \fBsetOption\fP (const char *option, int value)"
+.br
+.ti -1c
+.RI "void \fBsetOption\fP (const char *option, const char *value)"
+.br
+.ti -1c
+.RI "bool \fBshouldExit\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAsDefaultForAssertsOutOfTestCases\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAssertHandler\fP (detail::assert_handler ah)"
+.br
+.ti -1c
+.RI "void \fBsetCout\fP (\fBstd::ostream\fP *out)"
+.br
+.ti -1c
+.RI "int \fBrun\fP ()"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

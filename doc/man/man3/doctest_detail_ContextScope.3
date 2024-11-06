@@ -1,0 +1,77 @@
+.TH "doctest::detail::ContextScope< L >" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::detail::ContextScope< L >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdoctest::detail::ContextScopeBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContextScope\fP (const L &lambda)"
+.br
+.ti -1c
+.RI "\fBContextScope\fP (L &&lambda)"
+.br
+.ti -1c
+.RI "\fBContextScope\fP (const \fBContextScope\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContextScope\fP (\fBContextScope\fP &&) noexcept=default"
+.br
+.ti -1c
+.RI "\fBContextScope\fP & \fBoperator=\fP (const \fBContextScope\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContextScope\fP & \fBoperator=\fP (\fBContextScope\fP &&)=delete"
+.br
+.ti -1c
+.RI "void \fBstringify\fP (\fBstd::ostream\fP *s) const override"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBdoctest::detail::ContextScopeBase\fP
+.in +1c
+.ti -1c
+.RI "\fBContextScopeBase\fP (const \fBContextScopeBase\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContextScopeBase\fP & \fBoperator=\fP (const \fBContextScopeBase\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContextScopeBase\fP & \fBoperator=\fP (\fBContextScopeBase\fP &&)=delete"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Member Functions inherited from \fBdoctest::detail::ContextScopeBase\fP
+.in +1c
+.ti -1c
+.RI "\fBContextScopeBase\fP (\fBContextScopeBase\fP &&other) noexcept"
+.br
+.ti -1c
+.RI "void \fBdestroy\fP ()"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBdoctest::detail::ContextScopeBase\fP
+.in +1c
+.ti -1c
+.RI "bool \fBneed_to_destroy\fP {true}"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename L > void \fBdoctest::detail::ContextScope\fP< L >::stringify (\fBstd::ostream\fP * s) const\fC [inline]\fP, \fC [override]\fP, \fC [virtual]\fP"
+
+.PP
+Implements \fBdoctest::IContextScope\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

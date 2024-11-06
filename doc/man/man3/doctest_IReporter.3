@@ -1,0 +1,68 @@
+.TH "doctest::IReporter" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::IReporter
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBreport_query\fP (const \fBQueryData\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_run_start\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_run_end\fP (const \fBTestRunStats\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_case_start\fP (const \fBTestCaseData\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_case_reenter\fP (const \fBTestCaseData\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_case_end\fP (const \fBCurrentTestCaseStats\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_case_exception\fP (const \fBTestCaseException\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsubcase_start\fP (const \fBSubcaseSignature\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBsubcase_end\fP ()=0"
+.br
+.ti -1c
+.RI "virtual void \fBlog_assert\fP (const \fBAssertData\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBlog_message\fP (const \fBMessageData\fP &)=0"
+.br
+.ti -1c
+.RI "virtual void \fBtest_case_skipped\fP (const \fBTestCaseData\fP &)=0"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBget_num_active_contexts\fP ()"
+.br
+.ti -1c
+.RI "static const \fBIContextScope\fP *const * \fBget_active_contexts\fP ()"
+.br
+.ti -1c
+.RI "static int \fBget_num_stringified_contexts\fP ()"
+.br
+.ti -1c
+.RI "static const \fBString\fP * \fBget_stringified_contexts\fP ()"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

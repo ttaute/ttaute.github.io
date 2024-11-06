@@ -1,0 +1,53 @@
+.TH "doctest::detail::ContextScopeBase" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::detail::ContextScopeBase
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdoctest::IContextScope\fP\&.
+.PP
+Inherited by \fBdoctest::detail::ContextScope< L >\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContextScopeBase\fP (const \fBContextScopeBase\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContextScopeBase\fP & \fBoperator=\fP (const \fBContextScopeBase\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBContextScopeBase\fP & \fBoperator=\fP (\fBContextScopeBase\fP &&)=delete"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBdoctest::IContextScope\fP
+.in +1c
+.ti -1c
+.RI "virtual void \fBstringify\fP (\fBstd::ostream\fP *) const =0"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContextScopeBase\fP (\fBContextScopeBase\fP &&other) noexcept"
+.br
+.ti -1c
+.RI "void \fBdestroy\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "bool \fBneed_to_destroy\fP {true}"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

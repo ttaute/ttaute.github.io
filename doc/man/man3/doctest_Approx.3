@@ -1,0 +1,81 @@
+.TH "doctest::Approx" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::Approx
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBApprox\fP (double value)"
+.br
+.ti -1c
+.RI "\fBApprox\fP \fBoperator()\fP (double value) const"
+.br
+.ti -1c
+.RI "\fBApprox\fP & \fBepsilon\fP (double newEpsilon)"
+.br
+.ti -1c
+.RI "\fBApprox\fP & \fBscale\fP (double newScale)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "double \fBm_epsilon\fP"
+.br
+.ti -1c
+.RI "double \fBm_scale\fP"
+.br
+.ti -1c
+.RI "double \fBm_value\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator==\fP (double lhs, const \fBApprox\fP &rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator==\fP (const \fBApprox\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator!=\fP (double lhs, const \fBApprox\fP &rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator!=\fP (const \fBApprox\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator<=\fP (double lhs, const \fBApprox\fP &rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator<=\fP (const \fBApprox\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator>=\fP (double lhs, const \fBApprox\fP &rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator>=\fP (const \fBApprox\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator<\fP (double lhs, const \fBApprox\fP &rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator<\fP (const \fBApprox\fP &lhs, double rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator>\fP (double lhs, const \fBApprox\fP &rhs)"
+.br
+.ti -1c
+.RI "DOCTEST_INTERFACE friend bool \fBoperator>\fP (const \fBApprox\fP &lhs, double rhs)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

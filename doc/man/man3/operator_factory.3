@@ -1,0 +1,46 @@
+.TH "operator_factory" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+operator_factory
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "std::shared_ptr< \fBoperation\fP > \fBcreate\fP (char c)"
+.br
+.RI "Creates the correct operation for the given operator \fCc\fP\&. "
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static std::shared_ptr< \fBoperator_factory\fP > \fBgetInstance\fP ()"
+.br
+.RI "Returns static instance of \fBoperator_factory\fP\&. "
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "std::shared_ptr< \fBoperation\fP > operator_factory::create (char c)"
+
+.PP
+Creates the correct operation for the given operator \fCc\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIc\fP The operator to construct the operation from (e\&.g\&. '+') 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+The corresponding operation in form of a std::shared_ptr 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

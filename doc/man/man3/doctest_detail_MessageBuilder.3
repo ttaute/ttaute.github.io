@@ -1,0 +1,74 @@
+.TH "doctest::detail::MessageBuilder" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::detail::MessageBuilder
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBdoctest::MessageData\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMessageBuilder\fP (const char *file, int line, assertType::Enum severity)"
+.br
+.ti -1c
+.RI "\fBMessageBuilder\fP (const \fBMessageBuilder\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBMessageBuilder\fP (\fBMessageBuilder\fP &&)=delete"
+.br
+.ti -1c
+.RI "\fBMessageBuilder\fP & \fBoperator=\fP (const \fBMessageBuilder\fP &)=delete"
+.br
+.ti -1c
+.RI "\fBMessageBuilder\fP & \fBoperator=\fP (\fBMessageBuilder\fP &&)=delete"
+.br
+.ti -1c
+.RI "template<typename T > \fBMessageBuilder\fP & \fBoperator,\fP (const T &in)"
+.br
+.ti -1c
+.RI "template<typename T > DOCTEST_MSVC_SUPPRESS_WARNING_POP \fBMessageBuilder\fP & \fBoperator<<\fP (const T &in)"
+.br
+.ti -1c
+.RI "template<typename T > \fBMessageBuilder\fP & \fBoperator*\fP (const T &in)"
+.br
+.ti -1c
+.RI "bool \fBlog\fP ()"
+.br
+.ti -1c
+.RI "void \fBreact\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBstd::ostream\fP * \fBm_stream\fP"
+.br
+.ti -1c
+.RI "bool \fBlogged\fP = false"
+.br
+.in -1c
+
+Public Attributes inherited from \fBdoctest::MessageData\fP
+.in +1c
+.ti -1c
+.RI "\fBString\fP \fBm_string\fP"
+.br
+.ti -1c
+.RI "const char * \fBm_file\fP"
+.br
+.ti -1c
+.RI "int \fBm_line\fP"
+.br
+.ti -1c
+.RI "assertType::Enum \fBm_severity\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

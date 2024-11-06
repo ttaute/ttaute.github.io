@@ -1,0 +1,32 @@
+.TH "doctest::detail::ExpressionDecomposer" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::detail::ExpressionDecomposer
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBExpressionDecomposer\fP (assertType::Enum at)"
+.br
+.ti -1c
+.RI "template<typename L > \fBExpression_lhs\fP< L > \fBoperator<<\fP (L &&operand)"
+.br
+.ti -1c
+.RI "template<typename L , typename \fBtypes::enable_if\fP<!\fBdoctest::detail::types::is_rvalue_reference\fP< L >::value, void >::type *  = nullptr> \fBExpression_lhs\fP< const L & > \fBoperator<<\fP (const L &operand)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "assertType::Enum \fBm_at\fP"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.

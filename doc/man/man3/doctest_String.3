@@ -1,0 +1,97 @@
+.TH "doctest::String" 3 "Version latest" "math" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+doctest::String
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "using \fBsize_type\fP = DOCTEST_CONFIG_STRING_SIZE_TYPE"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBString\fP (const char *in)"
+.br
+.ti -1c
+.RI "\fBString\fP (const char *in, size_type in_size)"
+.br
+.ti -1c
+.RI "\fBString\fP (\fBstd::istream\fP &in, size_type in_size)"
+.br
+.ti -1c
+.RI "\fBString\fP (const \fBString\fP &other)"
+.br
+.ti -1c
+.RI "\fBString\fP & \fBoperator=\fP (const \fBString\fP &other)"
+.br
+.ti -1c
+.RI "\fBString\fP & \fBoperator+=\fP (const \fBString\fP &other)"
+.br
+.ti -1c
+.RI "\fBString\fP (\fBString\fP &&other) noexcept"
+.br
+.ti -1c
+.RI "\fBString\fP & \fBoperator=\fP (\fBString\fP &&other) noexcept"
+.br
+.ti -1c
+.RI "char \fBoperator[]\fP (size_type i) const"
+.br
+.ti -1c
+.RI "char & \fBoperator[]\fP (size_type i)"
+.br
+.ti -1c
+.RI "const char * \fBc_str\fP () const"
+.br
+.ti -1c
+.RI "char * \fBc_str\fP ()"
+.br
+.ti -1c
+.RI "size_type \fBsize\fP () const"
+.br
+.ti -1c
+.RI "size_type \fBcapacity\fP () const"
+.br
+.ti -1c
+.RI "\fBString\fP \fBsubstr\fP (size_type pos, size_type cnt=npos) &&"
+.br
+.ti -1c
+.RI "\fBString\fP \fBsubstr\fP (size_type pos, size_type cnt=npos) const &"
+.br
+.ti -1c
+.RI "size_type \fBfind\fP (char ch, size_type pos=0) const"
+.br
+.ti -1c
+.RI "size_type \fBrfind\fP (char ch, size_type pos=npos) const"
+.br
+.ti -1c
+.RI "int \fBcompare\fP (const char *other, bool no_case=false) const"
+.br
+.ti -1c
+.RI "int \fBcompare\fP (const \fBString\fP &other, bool no_case=false) const"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static DOCTEST_CONSTEXPR size_type \fBnpos\fP = static_cast<size_type>(\-1)"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "DOCTEST_INTERFACE \fBstd::ostream\fP & \fBoperator<<\fP (\fBstd::ostream\fP &s, const \fBString\fP &in)"
+.br
+.in -1c
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for math from the source code\&.
