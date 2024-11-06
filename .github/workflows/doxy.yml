@@ -13,13 +13,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - name: Create storage directory for math
+      shell: bash
+      run: mkdir math
+      
     - name: Grab repo
       uses: actions/checkout@v4
       with:
         repository: ttaute/math
+        path: '.\math'
     
     - name: Generate documentation
       uses: mattnotmitt/doxygen-action@v1
+      with:
+        doxyfile-path: './math/Doxyfile'
 
     - name: Create artifacts
       uses: actions/upload-artifact@v4
