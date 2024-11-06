@@ -16,8 +16,11 @@ jobs:
     - name: Create storage directory for math
       shell: bash
       run: mkdir math
+
+    - name: Grab website repo
+      uses: actions/checkout@v4
       
-    - name: Grab repo
+    - name: Grab math repo
       uses: actions/checkout@v4
       with:
         repository: ttaute/math
