@@ -21,6 +21,10 @@ jobs:
     - name: Generate documentation
       uses: mattnotmitt/doxygen-action@v1
 
+    - name: Move documentation into the correct directory structure
+      shell: bash
+      run: cd doc && mkdir math && mv html/search ./math && mv html/* ./math && cd ..
+
     - name: Create artifacts
       uses: actions/upload-artifact@v4
       with:
